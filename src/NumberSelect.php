@@ -9,7 +9,7 @@ class NumberSelect extends Select
     if($minval <= $maxval) for($i=$minval; $i<=$maxval; $i++) $sel[$i] = $i;
     else for($i=$minval; $i>=$maxval; $i--) $sel[$i] = $i;
 
-    parent::__construct($name, $sel, $default, $size, $muliple);
+    parent::__construct($name, $sel, $default, $size, $multiple);
   }
 }
 

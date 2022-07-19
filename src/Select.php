@@ -19,7 +19,10 @@ class Select extends FormElement
     if($options === null) $options = [];
 
     parent::__construct($name);
+
+    if(is_string($options) && $options !== '') $options = $this->get_opts_from_table($options);
     $this->options = $options;
+
     $this->size = $size;
     if($multiple) $this->multiple = true;
     $this->default = $default;

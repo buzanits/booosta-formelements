@@ -10,7 +10,7 @@ class JSelect extends Select
   {
     if($options === null) $options = [];
 
-    parent::__construct($name, $options, $default, $size, $mulitple);
+    parent::__construct($name, $options, $default, $size, $multiple);
     $this->id = uniqid('select_');
     $this->extra_attr .= " id='$this->id' ";
   }
